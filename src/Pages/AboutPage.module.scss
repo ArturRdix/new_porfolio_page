@@ -1,0 +1,113 @@
+.aboutWrapper {
+  // margin-top: 50px;
+  // margin-left: clamp(0.938rem, 7.589vw - 2.857rem, 6.25rem);
+  font-size: 18px;
+  padding-bottom: 60px;
+  height: 100%;
+  display: flex;
+  margin-bottom: 47px;
+  @media (max-width:740px) {
+    flex-direction: column;
+    overflow-x: auto;
+  }
+  .otherInfo {
+    border-left: 1px solid var(--border-color);
+    @media (max-width:740px){
+      border-left: none;
+    // border-top: 1px solid var(--border-color);
+
+    }
+    h2{
+      font-weight: 400;
+      color: var(--accent-text-color);
+    }
+    ol{
+      &.seo{
+        span{
+          color: #e06c75;
+        }
+      }
+      span{
+        color: #c678dd;
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
+  }
+  .mainInfo{
+    @media (max-width:740px){
+      padding-top: 20px !important;
+    }
+  }
+  .mainInfo,
+  .otherInfo {
+    flex: 1;
+    padding: 55px;
+    padding-inline: clamp(1.563rem, 2.679vw + 0.223rem, 3.438rem);
+    // padding-bottom: 100px;
+    overflow-y: auto;
+    @media (max-width:740px) {
+      flex: none;
+      overflow: hidden;
+    }
+    &::-webkit-scrollbar {
+      width: 20px; /* Ширина скроллбара */
+      height: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-inline: 1px solid var(--border-color);
+      background: var(--main-bg-color); /* Цвет фона дорожки */
+      border-radius: 0px; /* Закругленные углы */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(54, 56, 82, 0.404); /* Цвет ползунка */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(54, 56, 82, 0.725); /* Цвет при наведении */
+    }
+  }
+  ol{
+    list-style: none;
+  }
+  ul,ol {
+    list-style-position: inside;
+  }
+}
+span {
+  transition: 0.3s;
+}
+h3{font-weight: 400;
+color: rgb(202, 164, 49);}
+p {
+  font-weight: 100;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+.comment {
+  font-style: italic;
+  color: gray;
+  transition: 0.3s;
+}
+.me {
+  font-size: 20px;
+  color: #da5c5c;
+}
+.experience {
+  font-size: 20px;
+  color: #4dc129;
+}
+.free {
+  font-size: 20px;
+  color: #e7ea29;
+}
+li {
+  font-weight: 100;
+}
+.oneLi,
+.twoLi {
+  font-weight: 400;
+  color: #2c6ccd;
+}

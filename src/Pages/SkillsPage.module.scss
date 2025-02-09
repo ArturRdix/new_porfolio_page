@@ -1,0 +1,260 @@
+.html,
+.css,
+.sass,
+.react,
+.js,
+.ts,
+.next,
+.mobx {
+  transition: 0.2s;
+  fill: #5c5c5c;
+}
+.skillsBlock {
+  display: flex;
+  padding: 20px;
+  gap: clamp(0.625rem, 0.758vw + 0.341rem, 1.25rem);
+  align-items: flex-start;
+  @media (max-width:980px) {
+    flex-direction: column-reverse;
+  }
+}
+.skillsToogle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-grow: 1;
+  border: 1px solid var(--border-color);
+  max-width: fit-content;
+  padding: clamp(0.938rem, 1.136vw + 0.511rem, 1.875rem);
+  gap: clamp(0.938rem, 0vw + 0.938rem, 0.938rem);
+  @media (max-width:980px){
+    min-width: 100%;
+    width: 100%;
+  }
+}
+.skillsInfo {
+  flex-grow: 1;
+  padding-inline: 25px;
+  overflow: auto;
+  max-height: 87vh;
+  &::-webkit-scrollbar {
+    width: 20px; /* Ширина скроллбара */
+    height: 2px;
+    @media (max-width:980px){
+        width: 10px;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    border-inline: 1px solid var(--border-color);
+    background: var(--main-bg-color); /* Цвет фона дорожки */
+    border-radius: 0px; /* Закругленные углы */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(54, 56, 82, 0.404); /* Цвет ползунка */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(54, 56, 82, 0.725); /* Цвет при наведении */
+  }
+  p {
+    text-align: justify;
+    color: #5c5c5c;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 400;
+    font-size: 18px;
+    span {
+      transition: 0.2s;
+    }
+    &.active {
+      color: white;
+    }
+    &:last-child {
+      color: red;
+    }
+    &::before {
+      position: absolute;
+      content: "/*";
+      top: 0;
+      color: #5c5c5c;
+      right: 100%;
+      transition: 0.5s;
+    }
+    &::after {
+      position: absolute;
+      content: "*/";
+      bottom: 0;
+      color: #5c5c5c;
+      left: 100%;
+      transition: 0.5s;
+    }
+  }
+}
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: clamp(0.875rem, 0.909vw + 0.534rem, 1.625rem);
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 100;
+  color: #5c5c5c;
+
+  input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  &.active {
+    color: #fff;
+  }
+}
+
+.activehtml {
+  fill: #e34f26;
+  color: white !important;
+  span {
+    color: #e34f26;
+  }
+  &::before {
+    top: 0;
+    right: 120% !important;
+    opacity: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 120% !important;
+    // opacity: 0;
+  }
+}
+
+.activecss {
+  fill: #1572b6;
+  color: white !important;
+  span {
+    color: #1572b6;
+  }
+  &::before {
+    top: 0;
+    right: 120% !important;
+    opacity: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 120% !important;
+    // opacity: 0;
+  }
+}
+
+.activesass {
+  fill: #cc6699;
+  color: white !important;
+  span {
+    color: #cc6699;
+  }
+  &::before {
+    top: 0;
+    right: 120% !important;
+    opacity: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 120% !important;
+    // opacity: 0;
+  }
+}
+
+.activereact {
+  fill: #61dafb;
+  color: white !important;
+  span {
+    color: #61dafb;
+  }
+  &::before {
+    top: 0;
+    right: 120% !important;
+    opacity: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 120% !important;
+    // opacity: 0;
+  }
+}
+
+.activejs {
+  fill: #f7df1e;
+  color: white !important;
+  span {
+    color: #f7df1e;
+  }
+  &::before {
+    top: 0;
+    right: 120% !important;
+    opacity: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 120% !important;
+    // opacity: 0;
+  }
+}
+
+.activets {
+  fill: #3178c6;
+  color: white !important;
+  span {
+    color: #3178c6;
+  }
+  &::before {
+    top: 0;
+    right: 120% !important;
+    opacity: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 120% !important;
+    // opacity: 0;
+  }
+}
+
+.activenext {
+  fill: #ffffff;
+  color: white !important;
+  span {
+    color: #ffffff;
+  }
+  &::before {
+    top: 0;
+    right: 120% !important;
+    opacity: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 120% !important;
+    // opacity: 0;
+  }
+}
+
+.activemobx {
+  fill: #fb7014;
+  color: white !important;
+  span {
+    color: #fb7014;
+  }
+  &::before {
+    top: 0;
+    right: 120% !important;
+    opacity: 0;
+  }
+  &::after {
+    bottom: 0;
+    left: 120% !important;
+    // opacity: 0;
+  }
+}

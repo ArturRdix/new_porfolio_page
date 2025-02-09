@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Cascadia";
+  src: url(./fonts/CascadiaCodePL-Regular.woff2);
+}
+@font-face {
+  font-family: "Cascadia";
+  src: url(./fonts/CascadiaCodePL-Light.woff2);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Cascadia";
+  src: url(./fonts/CascadiaCodePLItalic-LightItalic.woff2);
+  font-weight: 100;
+  font-style: italic;
+}
+html,body,#root{
+  height: 100%;
+}input[type="checkbox"]:checked {
+  background-color: #4CAF50; /* Задаем цвет фона для чекбокса */
+  border-color: #4CAF50; /* Задаем цвет границы */
+}
+input[type="checkbox"] {
+  display: none; /* Скрываем стандартный чекбокс */
+}
+/* Если нужно изменить саму метку (label), привязанную к чекбоксу */
+input[type="checkbox"]:checked + label {
+  color: white; /* Меняем цвет текста метки */
+  font-weight: bold; /* Можно сделать текст жирным */
+}
+:root {
+  // --main-bg-color: #24292e;
+  --main-bg-color: #111f27;
+  --main-bg-color-hover: #162934;
+  --dark-main-bg-color: #0b181f;
+  --text-color: #e1e4e8;
+  --text-color-non-active: #bbbbbb9d;
+  --accent-text-color: #79b8ff;
+  --border-color: #66acfd33;
+}
+/* Стилизация скроллбара */
+::-webkit-scrollbar {
+  width: 1px; /* Ширина скроллбара */
+  height:2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-bg-color); /* Цвет фона дорожки */
+  border-radius: 4px; /* Закругленные углы */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-text-color); /* Цвет ползунка */
+ 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #15ddb5; /* Цвет при наведении */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cascadia";
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  overflow-y: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+}
